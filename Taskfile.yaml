@@ -1,6 +1,6 @@
 version: 3
 
 tasks:
-  create:
+  rds:
     cmds:
-      - terraform plan
+      - terraform apply -var-file="main.tfvars"

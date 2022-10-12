@@ -1,0 +1,5 @@
+How to RUN
+
+- terraform plan -var-file="main.tfvars"
+- terraform apply -var-file="main.tfvars"
+- terraform destroy -var-file="main.tfvars"
