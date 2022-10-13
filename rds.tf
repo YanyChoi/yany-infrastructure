@@ -19,5 +19,6 @@ resource "aws_db_instance" "default" {
   password             = var.DB_PW
   publicly_accessible  = true
   skip_final_snapshot  = true
+  vpc_security_group_ids   = [aws_security_group.allow_db.id]
 
 }
